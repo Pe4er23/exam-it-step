@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Hit The Road - Travel Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">TravelCo</div> <nav> <a href="#greeting">Story</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Write us</a>
+            </nav>
+            <div class="socials">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="greeting" class="greeting-section">
+        <div class="greeting-text">
+            <h1>Let's hit the road</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p> </div>
+        <div class="greeting-image">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Travel">
+        </div>
+    </section>
+
+    <section class="articles-section">
+        <article>
+            <div class="article-content">
+                <h2>Amazing Journey</h2> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptates esse quaerat, placeat fugit autem id ullam! Blanditiis, illo consequatur!</p> <button class="btn">Read More</button> </div>
+            <div class="article-image">
+                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Article 1">
+            </div>
+        </article>
+
+        <article class="reverse">
+            <div class="article-content">
+                <h2>Mountain View</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto mollitia modi facilis, suscipit corrupti molestiae?</p>
+                <button class="btn">Read More</button>
+            </div>
+            <div class="article-image">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Article 2">
+            </div>
+        </article>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="G1">
+                    <div class="overlay"> <span class="arrow left">&lt;</span>
+                        <span class="text">Travel Life</span>
+                        <span class="arrow right">&gt;</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="G2">
+                    <div class="overlay"><span class="arrow left">&lt;</span><span class="text">View</span><span class="arrow right">&gt;</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="G3">
+                    <div class="overlay"><span class="arrow left">&lt;</span><span class="text">Nature</span><span class="arrow right">&gt;</span></div>
+                </div>
+                <div class="gallery-item hide-mobile"> <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="G4">
+                    <div class="overlay"><span class="arrow left">&lt;</span><span class="text">Forest</span><span class="arrow right">&gt;</span></div>
+                </div>
+                <div class="gallery-item hide-tablet"> <img src="https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="G5">
+                    <div class="overlay"><span class="arrow left">&lt;</span><span class="text">Space</span><span class="arrow right">&gt;</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container features-grid">
+            <div class="feature-item">
+                <i class="fas fa-plane feature-icon"></i> <h3>Fast Travel</h3> <p>We provide the fastest routes to your destination.</p> </div>
+            <div class="feature-item">
+                <i class="fas fa-hotel feature-icon"></i>
+                <h3>Best Hotels</h3>
+                <p>Cozy and comfortable places to stay.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-map-marked-alt feature-icon"></i>
+                <h3>Guide Support</h3>
+                <p>24/7 support from our professional guides.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Write us</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Name" required> <input type="email" placeholder="Email" required> <input type="tel" placeholder="Phone Number"> </div>
+
+                <div class="form-group-radio">
+                    <p>How to contact you?</p>
+                    <div class="radio-options">
+                        <label><span>Email</span><input type="radio" name="contact" value="email" checked></label>
+                        <label><span>Phone</span><input type="radio" name="contact" value="phone"></label>
+                        <label><span>Telegram</span><input type="radio" name="contact" value="telegram"></label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <select>
+                        <option disabled selected>Select Subject</option>
+                        <option>Share my story</option>
+                        <option>Join the trip</option>
+                        <option>Participate in filming</option>
+                    </select>
+                </div>
+
+                <textarea placeholder="Your message..."></textarea>
+
+                <div class="form-check">
+                    <label><span>I am not a robot</span><input type="checkbox" required></label>
+                </div>
+
+                <button type="submit" class="btn-submit">Send Message</button> </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="copyright">&copy; 2023 TravelCo. All rights reserved.</div>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <a href="../Task 1/index.html">Go to Task 1</a>
+        </div>
+    </footer>
+
+</body>
+</html>

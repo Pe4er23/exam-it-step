@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Exam Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">Company</div>
+        <ul class="nav-links">
+            <li class="active"><a href="dashboard.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
+            <li><a href="user.html"><i class="fas fa-user"></i> User Profile</a></li>
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Maps</a></li>
+            <li><a href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+            <li><a href="#"><i class="fas fa-headset"></i> Support</a></li>
+        </ul>
+    </div>
+
+    <div class="main-panel">
+        <div class="top-nav">
+            <h2><i class="fa-solid fa-bars"></i>Dashboard</h2>
+        </div>
+        <div class="stats-grid">
+            <div class="card">
+                <div class="card-header-icon bg-orange"><i class="fa-solid fa-database"></i></div>
+                <div class="card-content">
+                    <p class="stats-category">Used Space</p>
+                    <h3 class="stats-title">49/50 <small>GB</small></h3> 
+                </div>
+                <div class="card-footer text-danger">
+                    <i class="fas fa-exclamation-triangle"></i> Get more space...
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header-icon bg-green"><i class="fa-duotone fa-solid fa-wallet"></i></div>
+                <div class="card-content">
+                    <p class="stats-category">Revenue</p>
+                    <h3 class="stats-title">$34,245</h3>
+                </div>
+                <div class="card-footer">
+                    <i class="far fa-calendar-alt"></i> Last 24 Hours
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header-icon bg-red"><i class="fas fa-info-circle"></i></div>
+                <div class="card-content">
+                    <p class="stats-category">Fixed Issues</p>
+                    <h3 class="stats-title">75</h3>
+                </div>
+                <div class="card-footer">
+                    <i class="fas fa-tag"></i> Tracked from Github
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header-icon bg-blue"><i class="fab fa-twitter"></i></div>
+                <div class="card-content">
+                    <p class="stats-category">Followers</p>
+                    <h3 class="stats-title">+245</h3>
+                </div>
+                <div class="card-footer">
+                    <i class="fas fa-clock"></i> Just Updated
+                </div>
+            </div>
+        </div>
+
+        <div class="charts-grid">
+            <div class="card">
+                <div class="chart-header bg-green">
+                    <div class="css-chart">
+                        <div class="bar" style="height: 40%"></div>
+                        <div class="bar" style="height: 60%"></div>
+                        <div class="bar" style="height: 35%"></div>
+                        <div class="bar" style="height: 80%"></div>
+                        <div class="bar" style="height: 55%"></div>
+                        <div class="bar" style="height: 90%"></div>
+                        <div class="bar" style="height: 45%"></div>
+                    </div>
+                </div>
+                <div class="chart-body">
+                    <h4>Daily Sales</h4>
+                    <p>55% increase in today sales.</p>
+                </div>
+                <div class="card-footer"><i class="far fa-clock"></i> updated 4 minutes ago</div>
+            </div>
+
+            <div class="card">
+                <div class="chart-header bg-orange">
+                    <div class="css-chart">
+                        <div class="bar" style="height: 20%"></div>
+                        <div class="bar" style="height: 30%"></div>
+                        <div class="bar" style="height: 80%"></div>
+                        <div class="bar" style="height: 40%"></div>
+                        <div class="bar" style="height: 50%"></div>
+                    </div>
+                </div>
+                <div class="chart-body">
+                    <h4>Email Subscriptions</h4>
+                    <p>Last Campaign Performance</p>
+                </div>
+                <div class="card-footer"><i class="far fa-clock"></i> campaign sent 2 days ago</div>
+            </div>
+
+            <div class="card">
+                <div class="chart-header bg-red">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <div class="chart-body">
+                    <h4>Completed Tasks</h4>
+                    <p>Last Campaign Performance</p>
+                </div>
+                <div class="card-footer"><i class="far fa-clock"></i> campaign sent 2 days ago</div>
+            </div>
+        </div>
+
+        <div class="bottom-grid">
+            <div class="card">
+                <div class="card-normal-header">
+                    <h4>Tasks</h4>
+                    <p>These are details about tasks</p>
+                </div>
+                <div class="card-body-table">
+                    <table>
+                        <tr>
+                            <td><input type="checkbox" checked></td>
+                            <td>Sign contract for "What are conference organizers afraid of?"</td>
+                            <td class="text-right"> <div><i class="fas fa-pen"></i> <i class="fas fa-times"></i></div></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                            <td class="text-right"><div><i class="fas fa-pen"></i><i class="fas fa-times"></i></div></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-normal-header bg-orange"> <h4>Employees Stats</h4>
+                    <p>New employees on 15th September, 2016</p>
+                </div>
+                <div class="card-body-table">
+                    <table>
+                        <thead>
+                            <tr><th>ID</th><th>Name</th><th>Salary</th><th>Country</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Dakota Rice</td><td>$36,738</td><td>UK</td></tr>
+                            <tr><td>2</td><td>Minerva Hooper</td><td>$23,789</td><td>RSA</td></tr>
+                            <tr><td>3</td><td>Sage Rodriguez</td><td>$56,142</td><td>Netherlands</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <ul class="footer-menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Licence</a></li>
+            </ul>
+            <div class="copyright">
+                &copy; 2023 Lorem ipsum dolor sit amet consectetur. 
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
