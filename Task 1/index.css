@@ -11,7 +11,9 @@
     --sidebar-bg: #1f1f1f;
     --bg-clr-orange: #ffa726;
     --bg-clr-green: #66bb6a;
+    --bg-clr-green-hover: #57a05a;
     --bg-clr-red: #ef5350;
+    --bg-clr-red-hover: #d43f3a;
     --bg-clr-blue: #26c6da;
     --bg-clr-purple: #ab47bc;
 }
@@ -30,7 +32,7 @@ body {
 
 
 
-/* --- SIDEBAR (Боковое меню) --- */
+/* --- SIDEBAR --- */
 .sidebar {
     width: var(--sidebar-width);
     height: 100vh;
@@ -80,20 +82,19 @@ body {
 
 .nav-links a i {
     margin-right: 15px;
-    width: 25px; /* Фикс ширины иконки для ровного текста */
+    width: 25px; 
     text-align: center;
 }
 
 
-/* Активный пункт меню (Розовый) */
 .nav-links li.active a {
     background-color: var(--primary-pink);
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4);
 }
 
-/* --- MAIN PANEL (Основная часть) --- */
+/* --- MAIN PANEL --- */
 .main-panel {
-    margin-left: var(--sidebar-width); /* Отступ слева на ширину сайдбара */
+    margin-left: var(--sidebar-width);
     width: calc(100% - var(--sidebar-width));
     padding: 30px;
     min-height: 100vh;
@@ -101,20 +102,17 @@ body {
     flex-direction: column;
 }
 
-/* Верхняя навигация (в мобильной версии) */
+
 .top-nav {
     margin-bottom: 30px;
-    display: none; /* Скрыто на десктопе */
+    display: none; 
     & i {
         margin-right: 10px;
         cursor: pointer;
     }
 }
 
-
-/* --- DASHBOARD GRID SYSTEM --- */
-
-/* Карточки верхнего ряда (Stats) */
+/* Карточки верхнего ряда */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -130,15 +128,15 @@ body {
     margin-bottom: 40px;
 }
 
-/* Карточки нижнего ряда (Tasks & Employees) */
+/* Карточки нижнего ряда */
 .bottom-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 колонки */
+    grid-template-columns: 1fr 1fr; 
     gap: 30px;
     margin-bottom: 30px;
 }
 
-/* --- STYLES FOR CARDS --- */
+
 .card {
     background: var(--card-bg);
     border-radius: 6px;
@@ -146,10 +144,10 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 30px; /* Место для "вылетающего" заголовка */
+    margin-top: 30px; 
 }
 
-/* Заголовок-плашка (цветной квадрат сверху) */
+
 .card-header-icon {
     width: 80px;
     height: 80px;
@@ -198,16 +196,16 @@ body {
 }
 .card-footer i { margin-right: 5px; }
 
-/* Стиль для графиков (имитация) */
+/* Графики */
 .chart-header {
     margin: -20px 15px 0;
     border-radius: 3px;
     padding: 15px;
     color: white;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0,0,0,0.4);
-    min-height: 160px; /* Высота графика */
+    min-height: 160px; 
     display: flex;
-    align-items: flex-end; /* Чтобы столбики были снизу */
+    align-items: flex-end;
     justify-content: center;
     & i {
         font-size: 5rem;
@@ -232,16 +230,13 @@ body {
     border-radius: 3px 3px 0 0; 
 }
 
-
-.fake-chart { width: 100%; text-align: center; opacity: 0.8; font-size: 3rem; }
-
 .chart-body {
     padding: 15px 20px;
 }
 .chart-body h4 { margin: 0; font-weight: 400; font-size: 1.1rem; }
 .chart-body p { color: var(--text-muted); margin: 5px 0 0; font-size: 0.9rem; }
 
-/* Таблицы и Списки (Bottom Grid) */
+/* Таблицы и Списки */
 .card-normal-header {
     background: var(--primary-pink);
     margin: -20px 15px 0;
@@ -279,14 +274,26 @@ th { color: var(--primary-pink); font-weight: 400; }
     color: white;
     cursor: pointer;
     }
-    & .fa-pen{  background-color: var(--bg-clr-green);  }
-    & .fa-times{    background-color: var(--bg-clr-red);    }
+    & .fa-pen{  
+        background-color: var(--bg-clr-green);
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: var(--bg-clr-green-hover);
+        }
+    }
+    & .fa-times{
+        background-color: var(--bg-clr-red);
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: var(--bg-clr-red-hover);
+        }
+    }
 }
 
-/* --- USER PROFILE STYLES --- */
+
 .profile-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* 2 части форма, 1 часть карточка */
+    grid-template-columns: 2fr 1fr; 
     gap: 30px;
 }
 
@@ -333,7 +340,7 @@ th { color: var(--primary-pink); font-weight: 400; }
     }
 }
 
-/* Карточка профиля (справа) */
+/* Карточка профиля справа */
 .profile-card-img {
     margin-top: -40px;
     width: 130px;
@@ -377,23 +384,22 @@ footer {
 .footer-menu a { text-decoration: none; color: #333; text-transform: uppercase; font-weight: 600; font-size: 0.8rem; }
 
 
-/* --- MEDIA QUERIES (Адаптивность по заданию) --- */
 
-/* < 1000px: Сайдбар может уменьшаться или меняться сетка */
+
 @media (max-width: 1000px) {
-    .stats-grid { grid-template-columns: 1fr 1fr; } /* 2 колонки */
-    .charts-grid { grid-template-columns: 1fr; } /* 1 колонка */
+    .stats-grid { grid-template-columns: 1fr 1fr; } 
+    .charts-grid { grid-template-columns: 1fr; } 
     .text-right div{ display: block; }
     .fa-pen {margin-bottom: 12px;}
 }
 
-/* < 800px: User Profile меняется */
+
 @media (max-width: 800px) {
     :root { --sidebar-width: 0px; } 
 
     .top-nav { display: block; margin-bottom: 20px; }
     
-    .sidebar { transform: translateX(-260px); transition: transform 0.3s; } /* Убираем влево */
+    .sidebar { transform: translateX(-260px); transition: transform 0.3s; } 
     .main-panel { margin-left: 0; width: 100%; }
     
     .profile-grid { grid-template-columns: 1fr; }
@@ -402,9 +408,9 @@ footer {
 }
 
 @media (max-width: 650px) {
-    .stats-grid { grid-template-columns: 1fr; } /* Все в 1 колонку */
+    .stats-grid { grid-template-columns: 1fr; } 
     
-    .form-row { flex-direction: column; gap: 0; } /* Инпуты в форме друг под другом */
+    .form-row { flex-direction: column; gap: 0; }
     .form-group { margin-bottom: 15px; }
 }
 

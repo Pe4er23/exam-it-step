@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 :root {
     --primary-color: #333;
     --accent-color: #e67e22;
@@ -14,7 +16,7 @@
 }
 
 body {
-    font-family: 'EB Garamond', serif; /*  */
+    font-family: 'EB Garamond', serif;
     line-height: 1.6;
     color: var(--primary-color);
     font-size: 18px;
@@ -39,7 +41,7 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 
-/* --- ШАПКА [cite: 11] --- */
+/* --- ШАПКА --- */
 header {
     background: #fff;
     padding: 20px 0;
@@ -71,15 +73,15 @@ nav a {
     text-decoration: none;
 }
 
-/* --- ПРИВЕТСТВИЕ [cite: 41] --- */
+/* --- ПРИВЕТСТВИЕ --- */
 .greeting-section {
     display: flex;
-    height: 500px; /* Фиксированная высота для работы object-fit */
+    height: 500px; 
     background: var(--light-bg);
 }
 
 .greeting-text {
-    flex: 1; /* Половина ширины */
+    flex: 1; 
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -154,7 +156,8 @@ article.reverse {
     cursor: pointer;
 }
 
-.overlay {
+.gallery-item {
+    & .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -168,10 +171,10 @@ article.reverse {
     padding: 0 10px;
     opacity: 0;
     transition: opacity 0.3s;
-}
-
-.gallery-item:hover .overlay {
-    opacity: 1;
+    }
+    &:hover overlay {
+        opacity: 1;
+    }
 }
 
 .arrow {
@@ -219,11 +222,6 @@ article.reverse {
 /* --- КОНТАКТНАЯ ФОРМА --- */
 .contact-section {
     padding: 60px 0;
-}
-
-.container{
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .contact-section h2 {
